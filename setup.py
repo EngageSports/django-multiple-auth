@@ -18,9 +18,9 @@ classifiers = [
             'Topic :: Software Development :: Libraries :: Python Modules']
 
 
-setup(name='multiple-auth',
-      version="0.1",
-      url='https://github.com/EngageSports/multiple-auth',
+setup(name='django-multiple-auth',
+      version="1.0",
+      url='https://github.com/EngageSports/django-multiple-auth',
       packages=find_packages(),
       long_description=description.strip(),
       description=("Multiple login users at the same time"),
