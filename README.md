@@ -5,6 +5,9 @@ django-multiple-auth allows you to login over a Django website with
 many users and quickly switch without having to type credentials.
 
 
+[![Build Status](https://travis-ci.org/EngageSports/django-multiple-auth.svg?branch=master)](https://travis-ci.org/EngageSports/django-multiple-auth)
+
+
 Install
 -------
 
