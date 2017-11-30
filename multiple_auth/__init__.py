@@ -1,3 +1,5 @@
+from six import iterkeys
+
 from django.middleware.csrf import rotate_token
 from django.contrib.auth.signals import user_logged_in
 from django.contrib.auth import _get_backends
@@ -17,7 +19,7 @@ def store_user_preferences(request):
             HASH_SESSION_KEY, USERS_PREFERENCES_KEY, LOGGED_USERS_KEY
         ]
         # Entire session dict without the Django-Reserved keys above
-        user_preferences = dict([(k, request.session.pop(k)) for k in dict(request.session).iterkeys() if k not in dont_store_keys])
+        user_preferences = dict([(k, request.session.pop(k)) for k in iterkeys(dict(request.session)) if k not in dont_store_keys])
         request.session.setdefault(USERS_PREFERENCES_KEY, {})[request.user.id] = user_preferences
 
 
