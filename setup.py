@@ -19,7 +19,7 @@ classifiers = [
 
 
 setup(name='django-multiple-auth',
-      version="1.0",
+      version="1.1",
       url='https://github.com/EngageSports/django-multiple-auth',
       packages=find_packages(),
       long_description=description.strip(),
