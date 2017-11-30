@@ -8,6 +8,13 @@ many users and quickly switch without having to type credentials.
 [![Build Status](https://travis-ci.org/EngageSports/django-multiple-auth.svg?branch=master)](https://travis-ci.org/EngageSports/django-multiple-auth)
 
 
+Requirements
+------------
+
+ - Django 1.10.* / Django 1.11.*
+ - Tested under python 2.7 and 3.6
+
+
 Install
 -------
 
