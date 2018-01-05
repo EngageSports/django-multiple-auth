@@ -6,6 +6,7 @@ many users and quickly switch without having to type credentials.
 
 
 [![Build Status](https://travis-ci.org/EngageSports/django-multiple-auth.svg?branch=master)](https://travis-ci.org/EngageSports/django-multiple-auth)
+[![Coverage Status](https://coveralls.io/repos/github/EngageSports/django-multiple-auth/badge.svg?branch=master)](https://coveralls.io/github/EngageSports/django-multiple-auth?branch=master)
 
 
 Requirements
