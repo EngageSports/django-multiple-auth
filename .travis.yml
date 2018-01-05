@@ -10,11 +10,14 @@ env:
 
 install:
   - pip install -r requirements.txt
+  - pip install coverage
 
 script:
-  - PYTHONPATH=. DJANGO_SETTINGS_MODULE=tests.test_settings django-admin test
+  - coverage run tests/manage.py test
 
 notifications:
     email:
       - martyn@engage-sports.com
 
+after_success:
+  - coveralls

@@ -15,7 +15,10 @@ INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'multiple_auth',
+    'django_nose'
 )
+TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
+
 TEMPLATES = [
 {
     'BACKEND': 'django.template.backends.django.DjangoTemplates',
