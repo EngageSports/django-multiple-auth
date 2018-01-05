@@ -10,7 +10,7 @@ env:
 
 install:
   - pip install -r requirements.txt
-  - pip install coverage
+  - pip install coverage django-nose
 
 script:
   - coverage run tests/manage.py test
